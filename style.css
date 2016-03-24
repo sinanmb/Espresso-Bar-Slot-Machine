@@ -1,0 +1,130 @@
+
+body { 
+	background: #550000;
+	color: #801515;
+}
+
+h1 {
+	text-align: center;
+	color: #801515;
+}
+
+.slot-machine {
+	margin-top: 50px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 16px;
+	background-color: #D46A6A;
+}
+
+.container {
+	text-align: center;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFAAAA;
+}
+
+.image {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.image h4 {
+	text-align: center;
+}
+
+.image img {
+	width: 150px;
+	height: 150px;
+}
+
+.prize-image {
+	margin-top:20px;
+	height: 50px;
+	width: 50px;
+}
+
+.lights {
+	height: 30px;
+	border: 1px solid #FFAAAA;
+	margin-bottom: 10px;
+	background-color: #FFAAAA;
+}
+
+.prize {
+	display: inline;
+}
+
+.button {
+	margin-top: 50px;
+	width: 20%;
+}
+
+.button {
+	background-color:#550000;
+	border-radius:50px;
+	border:1px solid #550000;
+	cursor:pointer;
+	color: #FFAAAA;
+	font-size:20px;
+	padding:16px 16px;
+}
+.button:hover {
+	background-color:#FFAAAA;
+	border:1px solid #FFAAAA;
+	color: #550000;
+}
+
+.button:focus {
+	outline:0;
+}
+
+
+@media screen and (max-width: 560px) {
+
+	.slot-machine {
+		margin-top: 50px;
+		border: 1px solid black;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 16px;
+	}
+
+	.container {
+		text-align: center;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #d3d3d3;
+	}
+
+	.image img {
+		width: 75px;
+		height: 75px;
+	}
+
+	h4 {
+		font-size: 75%;
+	}
+
+	.lights {
+		height: 15px;
+	}
+
+	.lights img {
+		max-width: 100%;
+	}
+
+	.prize {
+		margin-top: 16px;
+		display: block;
+		font-size: 10pt;
+	}
+
+	.button { 
+		width: 100%;
+	}
+}

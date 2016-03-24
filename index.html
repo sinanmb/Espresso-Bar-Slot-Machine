@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="slotMachine">
+<head>
+	<meta charset="UTF-8">
+	<title>Espresso Bar Slot Machine</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src="script.js"></script></body>
+</head>
+<body ng-controller="slotMachineController">
+
+	<div class="slot-machine">
+		<h1> Espresso Bar Slot Machine</h1>
+		<div class="lights">
+			<img ng-src="img/lights-2.png" ng-show="areLightsDisplayed">
+			<img ng-src="img/lights.png" ng-hide="areLightsDisplayed">
+		</div>
+		<div class="container">
+			<div class="image">
+				<img ng-src="{{firstReel.img}}">
+				<h4>{{firstReel.name}}</h4>
+			</div>
+			<div class="image">
+				<img ng-src="{{secondReel.img}}">
+				<h4>{{secondReel.name}}</h4>
+			</div>
+			<div class="image">
+				<img ng-src="{{thirdReel.img}}">
+				<h4>{{thirdReel.name}}</h4>
+			</div>
+		</div>
+		<div>
+			<button type="button" 
+				class="button"
+				ng-disabled="isButtonDisabled"
+				ng-click="pullLever()">
+				Play
+			</button>
+			<div class="prize" ng-show="prize">
+				Congratulations! You won a {{prize.name}}
+				<img class="prize-image" ng-src="{{prize.img}}">
+			</div>
+			<div class="prize" ng-show="!isButtonDisabled && !prize">
+				Try again!
+			</div>
+		</div>
+	</div>
+</body>
+</html>
